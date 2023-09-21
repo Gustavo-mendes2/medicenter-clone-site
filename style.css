@@ -1,0 +1,538 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: gray;
+}
+header {
+  background-color: white;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+  margin-top: 28px;
+}
+a {
+  text-decoration-style: dotted;
+}
+.headerContainer {
+  display: flex;
+  height: 100%;
+  width: 990px;
+  align-items: center;
+  justify-content: space-between;
+}
+.navButtons {
+  width: 60%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+}
+.navButtons a {
+  width: 100%;
+  height: 80%;
+  padding: 13px;
+  background-color: white;
+  /* margin: 0px 3px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+}
+.navButtons a:hover {
+  background-color: rgb(66, 179, 229);
+  color: white;
+}
+.mobileMenu {
+  display: none;
+  flex-direction: column;
+  width: 50px;
+  height: 50px;
+  justify-content: space-evenly;
+  margin-right: 5%;
+}
+.mM_line {
+  width: 100%;
+  height: 3px;
+  background-color: rgb(56, 170, 225);
+}
+
+section {
+  width: 100%;
+  height: 670px;
+  background-image: url(/imagens/img1.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+.sectionContainer {
+  width: 990px;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.supText {
+  color: white;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 110px;
+  font-family: "Volkhov", serif;
+  font-weight: lighter;
+  font-size: 20px;
+  text-shadow: 0px 1px black;
+}
+.supText h2 {
+  font-size: 60px;
+  font-family: "PT Sans";
+  font-weight: lighter;
+}
+.tripleBox {
+  width: 990px;
+  height: 210px;
+  display: flex;
+  margin-top: 60px;
+  color: white;
+}
+.box1 {
+  background-color: rgb(66, 179, 229);
+  height: 100%;
+  width: 34%;
+}
+.box2 {
+  background-color: rgb(3, 132, 206);
+  height: 100%;
+  width: 33%;
+}
+.box3 {
+  background-color: rgb(49, 86, 163);
+  height: 100%;
+  width: 33%;
+}
+.boxContainer {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 23px 30px;
+}
+.boxContainer h2 {
+  margin-bottom: 15px;
+  font-weight: lighter;
+}
+.boxContainer p {
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+.boxContainer a button {
+  height: 30px;
+  padding: 7px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+.hours {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.hours p {
+  width: 50%;
+  border-bottom: 2px solid rgb(68, 104, 178);
+}
+.schedule {
+  display: flex;
+  justify-content: flex-end;
+}
+
+article {
+  height: 1045px;
+  width: 100%;
+  background-color: rgb(248, 248, 248);
+  display: flex;
+  justify-content: center;
+}
+.articleContainer {
+  width: 990px;
+  height: 100%;
+  display: flex;
+}
+.newsBlock {
+  width: 33%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.newsBlock:nth-child(1) {
+  width: 34%;
+}
+.newsTitle p {
+  /* background-color: blue; */
+  height: 40px;
+  display: flex;
+  align-items: baseline;
+  font-size: 25px;
+}
+.newsTitle span {
+  margin-right: 5px;
+  border-bottom: 2px solid rgb(66, 179, 229);
+}
+.newsBlock:nth-child(3) .newsTitle span {
+  margin-right: 0px;
+}
+.newsTitle {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.news {
+  /* height: 100%; */
+  width: 100%;
+}
+.newsDate {
+  width: 100%;
+  height: 37px;
+  margin: 30px 0px;
+}
+.ballons {
+  display: flex;
+}
+.dateBallon {
+  background-color: rgb(49, 86, 163);
+  height: 31px;
+  width: 76px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  margin-right: 2px;
+}
+.numberBallon {
+  width: 30px;
+  height: 31px;
+  background-color: rgb(66, 179, 229);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+}
+.downArrow {
+  width: 0px;
+  height: 0px;
+  border: 3px solid rgb(49, 86, 163);
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+.newsArticle {
+  /* height: 100%; */
+  width: 100%;
+  border-bottom: 2px solid rgb(224, 224, 224);
+}
+.newImage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.newsArticle figure img {
+  height: 188px;
+  width: 329px;
+  object-position: center;
+}
+.newsText h3 {
+  font-size: 28px;
+  margin: 25px 0px;
+  font-weight: 200;
+}
+.newsText p {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.source {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.allNewsButton {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 40px;
+}
+.allNewsButton a {
+  text-decoration-style: dotted;
+  font-size: 15px;
+}
+.asideTitle {
+  background-color: rgb(248, 248, 248);
+  height: 39px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  font-weight: lighter;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px rgb(224, 224, 224) solid;
+  transition: 0.3s;
+}
+.asideTitle:hover {
+  background-color: rgb(49, 86, 163);
+  color: white;
+  cursor: pointer;
+}
+.asideTitle p {
+  margin: 0px 5px;
+}
+.asideTitle p:nth-child(2) {
+  font-size: 30px;
+}
+.selectedAsideTitle {
+  background-color: rgb(49, 86, 163);
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.asideText {
+  height: 95px;
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+}
+.asideText p {
+  font-size: 12px;
+}
+.asideDetails {
+  display: none;
+  flex-direction: column;
+  transition: 0.5s;
+}
+.asideText figure img {
+  width: 75px;
+  height: 75px;
+  margin-right: 10px;
+}
+.asideButtons {
+  display: flex;
+  justify-content: flex-end;
+}
+.asideButtons button {
+  height: 30px;
+  width: 74px;
+  margin-right: 4px;
+  border-radius: 0;
+  border: transparent;
+  color: white;
+  font-weight: lighter;
+  background-color: rgb(49, 86, 163);
+  display: flex;
+  align-items: center;
+  padding-left: 3px;
+}
+.asideButtons button:nth-child(2) {
+  width: 90px;
+}
+.asideBottom {
+  border-bottom: 2px rgb(224, 224, 224) solid;
+}
+.newsBlock:nth-child(3) .asideBottom .newsTitle p {
+  font-weight: lighter;
+  font-size: 18px;
+}
+.newsBlock:nth-child(3) .asideBottom .newsText {
+  margin: 25px 0px;
+}
+.contact {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+.contact img {
+  margin-right: 5px;
+}
+.contact p {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 15px;
+}
+footer {
+  height: 510px;
+  background-color: rgb(32, 32, 32);
+  display: flex;
+  justify-content: center;
+}
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+footer .tripleBox {
+  margin-top: 0px;
+  height: 100px;
+}
+footer .tripleBox div {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  justify-content: center;
+}
+footer .tripleBox div h3 {
+  font-weight: lighter;
+  margin-bottom: 5px;
+  font-size: 25px;
+}
+footer .tripleBox div p {
+  font-size: 12px;
+  font-weight: lighter;
+}
+.tripleTitle {
+  display: flex;
+  height: 75%;
+  width: 990px;
+  border-bottom: 1px rgba(224, 224, 224, 0.7) solid;
+}
+.tripleFooterContainer {
+  width: 33%;
+  height: 100%;
+  margin-left: 10px;
+  color: white;
+}
+.tripleFooterContainer .newsTitle,
+.tripleFooterContainer:nth-child(1) strong {
+  color: white;
+}
+.tripleFooterContainer:nth-child(1) {
+  color: rgba(224, 224, 224, 0.5);
+}
+.tripleTitle .newsTitle span {
+  margin: 0px;
+}
+.clinicDescription {
+  font-size: 13px;
+  margin: 28px 0px;
+  width: 90%;
+}
+.clinicAddress {
+  font-size: 14px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.posts {
+  display: flex;
+  flex-direction: column;
+}
+.tripleFooterContainer:nth-child(3) .posts .post {
+  color: rgba(224, 224, 224, 0.5);
+}
+.post {
+  margin-top: 25px;
+}
+.post span {
+  color: white;
+}
+.postDate {
+  color: rgb(66, 179, 229);
+  font-size: 12px;
+  margin-left: 18px;
+}
+.credits {
+  width: 100%;
+  height: 5%;
+  color: rgba(224, 224, 224, 0.5);
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+}
+.credits span {
+  color: white;
+}
+
+@media (max-width: 970px) {
+  .navButtons {
+    display: none;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: 0px;
+  }
+
+  header {
+    width: auto;
+    height: auto;
+  }
+  .mobileMenu {
+    display: flex;
+    margin-right: 20px;
+  }
+  .logo {
+    margin-left: 15px;
+  }
+  .tripleBox {
+    width: auto;
+    height: auto;
+    flex-direction: column;
+  }
+  .supText {
+    width: auto;
+  }
+  .box1,
+  .box2,
+  .box3 {
+    width: 100%;
+  }
+  section {
+    height: 940px;
+  }
+  article {
+    height: auto;
+  }
+  .newsBlock,
+  .newsBlock:nth-child(1) {
+    width: auto;
+    margin-bottom: 0px;
+  }
+  .articleContainer {
+    flex-direction: column;
+  }
+  .newImage figure img {
+    width: 100%;
+    height: 100%;
+  }
+  footer {
+    height: auto;
+  }
+  footer .tripleBox {
+    height: auto;
+    width: 100%;
+  }
+  .tripleTitle {
+    height: 100%;
+    width: auto;
+    flex-direction: column;
+  }
+  .tripleFooterContainer {
+    width: auto;
+  }
+  .credits {
+    margin-top: 5px;
+  }
+}
